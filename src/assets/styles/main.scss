@@ -1,0 +1,11 @@
+// common styles
+@import "./common.scss";
+@import "./font.scss";
+// common styles
+
+// components styles
+@import "@/components/header/header.scss";
+@import "@/components/project/project.scss";
+@import "@/components/travel/travel.scss";
+@import "@/components/contact/contact.scss";
+@import "./media.scss";

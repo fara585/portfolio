@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "OpenSans-Regular";
+
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+$text: #e7e7e0;
+$index: calc(1vw + 1vh);
+$transition: transform .75s cubic-bezier(.075, .5, 0, 1);
+$main-article-transform: translate3d(0, calc(var(--scrollTop) / 9), 0);
+
+body::-webkit-scrollbar {
+    width: 13px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #192829;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #4B665F;
+}

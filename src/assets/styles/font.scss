@@ -1,0 +1,58 @@
+// $Monstserrat: (
+//     "Regular",
+//     400),
+//     ("Medium", 500),
+//     ("Bold", 700),
+//     ("ExtraBold", 800),
+//     ("Light", 300),
+//     ("SemiBold", 600
+// );
+
+// @each $name, $weight in $Monstserrat {
+//     @font-face {
+//         font-family: "Monstserrat";
+//         src: url(../font/Montserrat-#{$name}.ttf);
+//         font-weight: $weight;
+//     }
+// }
+
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(/src/assets/font/opensans/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans-ExtraBold";
+    src: url(/src/assets/font/opensans/OpenSans-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans-Italic";
+    src: url(/src/assets/font/opensans/OpenSans-Italic.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url(/src/assets/font/opensans/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans-Medium";
+    src: url(/src/assets/font/opensans/OpenSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url(/src/assets/font/opensans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans-SemiBold";
+    src: url(/src/assets/font/opensans/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Lobster-Regular";
+    src: url(../font/dance/Lobster-Regular.ttf);
+}
