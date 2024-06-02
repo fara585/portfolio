@@ -161,8 +161,7 @@ onMounted(() => {
 
     </header>
 
-    <article ref="article" class="main__article" style="background-image: url(./src/assets/images/dungeon.jpg)"
-        id="about">
+    <article ref="article" class="main__article" id="about">
         <div class="container main__article-content">
             <img src="/src/assets/images/self.png" alt="" ref="self" />
 
