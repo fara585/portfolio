@@ -1,32 +1,88 @@
-@media(max-width: 1500px) {
+@media(max-width: 1700px) {
     .main__article {
         &-content {
+            justify-content: space-between;
+            align-items: center;
+            text-align: end;
 
             img {
-                max-width: 480px;
-                top: 80px;
-                left: 0;
+                position: static;
+                max-width: 500px;
             }
         }
     }
 
     .skills {
-        h3 {
-            top: 10%;
+        &__content {
+            padding: 130px 0 50px;
         }
     }
+}
 
+@media(max-width: 1500px) {
+    .main__article {
+        &-content {
+            img {
+                max-width: 450px;
+            }
+        }
+    }
 }
 
 @media(max-width: 1000px) {
     .header {
+
+        &-hamburger {
+            display: block;
+
+            .active &__bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .active &__bar:nth-child(1) {
+                transform: translateY(10px) rotate(45deg);
+            }
+
+            .active &__bar:nth-child(3) {
+                transform: translateY(-10px) rotate(-45deg);
+            }
+        }
+
         &__top-list {
-            gap: 14px;
+            width: 100%;
+            position: fixed;
+            left: 0;
+            bottom: -5000%;
+            justify-content: space-between;
+            background: rgba(25, 40, 41, 0.58);
+            backdrop-filter: blur(10.3px);
+            -webkit-backdrop-filter: blur(10.3px);
+            transition: 0.5s ease;
+            border-radius: 20px 20px 0 0;
+            padding: 30px 70px;
+            z-index: 9999;
         }
 
         &__list-items {
-            font-size: 17px;
+            span {
+                display: none;
+            }
+
+            i {
+                display: block;
+                font-size: 22px;
+            }
+
+            i:hover {
+                color: #fff263;
+            }
+
         }
+
+        &__top-list.active {
+            bottom: 0;
+        }
+
 
         &__top-language {
             width: 80px;
@@ -43,6 +99,7 @@
         }
     }
 
+
     .button {
         width: 170px;
 
@@ -54,15 +111,8 @@
     .main__article {
         &-content {
             img {
-                max-width: 450px;
-                top: 100px;
+                max-width: 400px;
             }
-        }
-    }
-
-    .skills {
-        h3 {
-            top: 14%;
         }
     }
 
@@ -258,9 +308,6 @@
 @media(max-width: 850px) {
 
     .header {
-        &__top-list {
-            gap: 9px;
-        }
 
         &__list-items {
             font-size: 15px;
@@ -352,9 +399,6 @@
 
 @media(max-width: 790px) {
     .header {
-        &__top-list {
-            gap: 7px;
-        }
 
         &__top-language {
             width: 60px;
@@ -396,61 +440,9 @@
 
     .header {
 
-        &-hamburger {
-            display: block;
-
-            .active &__bar:nth-child(2) {
-                opacity: 0;
-            }
-
-            .active &__bar:nth-child(1) {
-                transform: translateY(10px) rotate(45deg);
-            }
-
-            .active &__bar:nth-child(3) {
-                transform: translateY(-10px) rotate(-45deg);
-            }
-        }
-
-        &__top-list {
-            position: fixed;
-            left: 0;
-            bottom: -50%;
-            width: 100%;
-            justify-content: space-between;
-            background: rgba(25, 40, 41, 0.58);
-            backdrop-filter: blur(10.3px);
-            -webkit-backdrop-filter: blur(10.3px);
-            transition: 0.5s ease;
-            border-radius: 20px 20px 0 0;
-            padding: 30px 90px;
-        }
-
-        &__list-items {
-
-            span {
-                display: none;
-            }
-
-            i {
-                display: block;
-                font-size: 22px;
-            }
-
-            i:hover {
-                color: #fff263;
-            }
-
-        }
-
-        &__top-list.active {
-            bottom: 0;
-        }
-
         &__top-title {
             font-size: calc($index * 2.4);
         }
-
     }
 
 }

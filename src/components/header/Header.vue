@@ -65,6 +65,7 @@ onMounted(() => {
 
                 <h1 class="header__top-title">{{ langData.portfolio[lang ? "en" : "ru"] }}</h1>
 
+
                 <ul class="header__top-list" :class="toggleBurger ? 'active' : ''">
                     <li>
                         <a href="#header" class="header__list-items">
@@ -265,4 +266,5 @@ onMounted(() => {
             </div>
         </div>
     </section>
+
 </template>

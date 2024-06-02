@@ -1,22 +1,22 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import Header from '@/components/header/Header.vue';
-import Project from '@/components/project/Project.vue';
-import Travel from '@/components/travel/Travel.vue';
-import Contact from '@/components/contact/Contact.vue';
+// import Project from '@/components/project/Project.vue';
+// import Travel from '@/components/travel/Travel.vue';
+// import Contact from '@/components/contact/Contact.vue';
 const isLoading = ref(true);
 onMounted(() => {
-  // const handleLoaded = () => {
-  //   isLoading.value = false;
-  // };
-  // window.addEventListener('load', handleLoaded);
-  // const cleanup = () => {
-  //   window.removeEventListener('load', handleLoaded);
-  // };
-  // onUnmounted(cleanup);
-  setTimeout(() => {
+  const handleLoaded = () => {
     isLoading.value = false;
-  }, 8000);
+  };
+  window.addEventListener('load', handleLoaded);
+  const cleanup = () => {
+    window.removeEventListener('load', handleLoaded);
+  };
+  onUnmounted(cleanup);
+  // setTimeout(() => {
+  //   isLoading.value = false;
+  // }, 8000);
 });
 </script>
 
@@ -27,9 +27,9 @@ onMounted(() => {
     </div>
     <div v-else>
       <Header />
-      <Project />
-      <Travel />
-      <Contact />
+      <!-- <Project /> -->
+      <!-- <Travel /> -->
+      <!-- <Contact /> -->
     </div>
   </div>
 </template>
