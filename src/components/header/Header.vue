@@ -7,7 +7,7 @@ const toggleBurger = ref(false);
 const article = ref(null);
 const self = ref(null);
 const volume = ref(true);
-const audioElement = new Audio("/src/assets/music/birds39-forest-20772.mp3");
+const audioElement = new Audio("@/assets/music/birds39-forest-20772.mp3");
 const toggleVolume = () => {
     volume.value = !volume.value;
     if (volume.value) {

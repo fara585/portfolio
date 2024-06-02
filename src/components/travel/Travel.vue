@@ -3,11 +3,6 @@ import langData, { lang } from "@/lang.js";
 import { onMounted, ref } from "vue";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import { EffectCards } from 'swiper/modules';
-import 'swiper/scss';
-import 'swiper/scss/effect-cards';
-const modules = [EffectCards];
 gsap.registerPlugin(ScrollTrigger);
 const plane = ref(null);
 onMounted(() => {
@@ -19,7 +14,7 @@ onMounted(() => {
             start: '50px 80%',
         }
     });
-    gsap.fromTo(plane.value, { x: 150, opacity: 0 }, {
+    gsap.fromTo(plane.value, { x: 180, opacity: 0 }, {
         opacity: 1, x: 0, duration: 1.5,
         scrollTrigger: {
             trigger: plane.value,
@@ -27,19 +22,11 @@ onMounted(() => {
             start: '50px 80%',
         }
     });
-    gsap.fromTo(".travel__content-swiper", { x: -100, opacity: 0 }, {
-        opacity: 1, x: 0, duration: 1.5,
-        scrollTrigger: {
-            trigger: ".travel__content-swiper",
-            toggleActions: "restart pause resume none",
-            start: '50px 80%',
-        }
-    });
     gsap.fromTo(".travel__content p", { opacity: 0 }, {
-        opacity: 1, duration: 1.5, delay: .9,
+        opacity: 1, duration: 1.5, delay: .3,
         scrollTrigger: {
             trigger: ".travel__content p",
-            // toggleActions: "restart pause resume none",
+            toggleActions: "restart pause resume none",
             start: '50px 80%',
         }
     });
@@ -67,59 +54,6 @@ onMounted(() => {
 
             <p>{{ langData.travelinfo[lang ? "en" : "ru"] }}</p>
 
-            <swiper :effect="'cards'" :grabCursor="true" :loop="true" :modules="modules" class="travel__content-swiper">
-                <swiper-slide class="travel__content-card">
-                    <img src="/src/assets/travel/center.png" alt="">
-                </swiper-slide>
-                <swiper-slide class="travel__content-card">
-                    <img src="/src/assets/travel/polizei.png" alt="">
-                </swiper-slide>
-                <swiper-slide class="travel__content-card">
-                    <video src="/src/assets/travel/work.mp4" autoplay loop muted></video>
-                </swiper-slide>
-                <swiper-slide class="travel__content-card">
-                    <video src="/src/assets/travel/work2.mp4" autoplay loop muted></video>
-                </swiper-slide>
-                <swiper-slide class="travel__content-card">
-                    <img src="/src/assets/travel/rhainfall.png" alt="">
-                </swiper-slide>
-                <swiper-slide class="travel__content-card">
-                    <img src="/src/assets/travel/group.png" alt="">
-                </swiper-slide>
-                <swiper-slide class="travel__content-card">
-                    <img src="/src/assets/travel/uzbflag.png" alt="">
-                </swiper-slide>
-                <swiper-slide class="travel__content-card">
-                    <img src="/src/assets/travel/eifel.png" alt="">
-                </swiper-slide>
-                <swiper-slide class="travel__content-card">
-                    <img src="/src/assets/travel/fpolice.png" alt="">
-                </swiper-slide>
-                <swiper-slide class="travel__content-card">
-                    <img src="/src/assets/travel/luvr.png" alt="">
-                </swiper-slide>
-                <swiper-slide class="travel__content-card">
-                    <img src="/src/assets/travel/park.png" alt="">
-                </swiper-slide>
-                <swiper-slide class="travel__content-card">
-                    <img src="/src/assets/travel/park2.png" alt="">
-                </swiper-slide>
-                <swiper-slide class="travel__content-card">
-                    <img src="/src/assets/travel/park3.png" alt="">
-                </swiper-slide>
-                <swiper-slide class="travel__content-card">
-                    <img src="/src/assets/travel/dolomitres.png" alt="">
-                </swiper-slide>
-                <swiper-slide class="travel__content-card">
-                    <img src="/src/assets/travel/spider.png" alt="">
-                </swiper-slide>
-                <swiper-slide class="travel__content-card">
-                    <img src="/src/assets/travel/inight.png" alt="">
-                </swiper-slide>
-                <swiper-slide class="travel__content-card">
-                    <img src="/src/assets/travel/river.png" alt="">
-                </swiper-slide>
-            </swiper>
 
         </div>
     </section>
