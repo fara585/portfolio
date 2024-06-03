@@ -39,6 +39,14 @@ onMounted(() => {
     mm.add("(max-width: 1700px)", () => {
         tl.kill();
     });
+    gsap.fromTo(self.value, { x: -100, opacity: 0 }, {
+        opacity: 1, x: 0, duration: 1.5, delay: .7,
+        scrollTrigger: {
+            trigger: self.value,
+            toggleActions: "restart pause resume none",
+            start: '-250px 80%',
+        }
+    });
     gsap.fromTo(".title", { x: 100, opacity: 0 }, {
         opacity: 1, x: 0, duration: 1.5,
         scrollTrigger: {
@@ -65,43 +73,24 @@ onMounted(() => {
 
                 <h1 class="header__top-title">{{ langData.portfolio[lang ? "en" : "ru"] }}</h1>
 
-
-                <ul class="header__top-list" :class="toggleBurger ? 'active' : ''">
+                <ul class="header__top-list">
                     <li>
-                        <a href="#header" class="header__list-items">
-                            <i class=" fas fa-home"></i>
-                            <span>{{ langData.home[lang ? "en" : "ru"] }}</span>
-                        </a>
+                        <a href="#header" class="header__list-items">{{ langData.home[lang ? "en" : "ru"] }}</a>
                     </li>
                     <li>
-                        <a href="#about" class="header__list-items">
-                            <i class="fas fa-user"></i>
-                            <span> <span>{{ langData.about[lang ? "en" : "ru"] }}</span></span>
-                        </a>
+                        <a href="#about" class="header__list-items">{{ langData.about[lang ? "en" : "ru"] }}</a>
                     </li>
                     <li>
-                        <a href="#skills" class="header__list-items">
-                            <i class="far fa-code"></i>
-                            <span>{{ langData.skills[lang ? "en" : "ru"] }}</span>
-                        </a>
+                        <a href="#skills" class="header__list-items">{{ langData.skills[lang ? "en" : "ru"] }}</a>
                     </li>
                     <li>
-                        <a href="#projects" class="header__list-items">
-                            <i class="fas fa-tasks"></i>
-                            <span>{{ langData.project[lang ? "en" : "ru"] }}</span>
-                        </a>
+                        <a href="#projects" class="header__list-items">{{ langData.project[lang ? "en" : "ru"] }}</a>
                     </li>
                     <li>
-                        <a href="#travel" class="header__list-items">
-                            <i class="far fa-suitcase-rolling"></i>
-                            <span>{{ langData.travel[lang ? "en" : "ru"] }}</span>
-                        </a>
+                        <a href="#travel" class="header__list-items">{{ langData.travel[lang ? "en" : "ru"] }}</a>
                     </li>
                     <li>
-                        <a href="#contact" class="header__list-items">
-                            <i class="fas fa-phone-alt"></i>
-                            <span>{{ langData.contact[lang ? "en" : "ru"] }}</span>
-                        </a>
+                        <a href="#contact" class="header__list-items">{{ langData.contact[lang ? "en" : "ru"] }}</a>
                     </li>
                 </ul>
 
@@ -149,6 +138,39 @@ onMounted(() => {
 
             </div>
 
+            <ul class="header__list-media" :class="toggleBurger ? 'active' : ''">
+                <li>
+                    <a href="#header" class="header__list-media-items">
+                        <i class=" fas fa-home"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" class="header__list-media-items">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills" class="header__list-media-items">
+                        <i class="far fa-code"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects" class="header__list-media-items">
+                        <i class="fas fa-tasks"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#travel" class="header__list-media-items">
+                        <i class="far fa-suitcase-rolling"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="header__list-media-items">
+                        <i class="fas fa-phone-alt"></i>
+                    </a>
+                </li>
+            </ul>
+
             <div class="container header__content-bottom">
                 <h2 class="header__bottom-title">{{ langData.welcome[lang ? "en" : "ru"] }}</h2>
                 <h3 class="header__bottom-subtitle">{{ langData.hope[lang ? "en" : "ru"] }}</h3>
@@ -165,7 +187,6 @@ onMounted(() => {
     <article ref="article" class="main__article" id="about">
         <div class="container main__article-content">
             <img src="/src/assets/images/self.png" alt="" ref="self" />
-
             <div class="main__content-right">
                 <h2 class="main__right-title">{{ langData.name[lang ? "en" : "ru"] }}</h2>
                 <p class="main__right-txt">

@@ -93,13 +93,13 @@
             width: 100%;
         }
 
-        i {
-            display: none;
-        }
-
         &.active {
             color: #fff04b;
         }
+    }
+
+    &__list-media {
+        display: none;
     }
 
     &__top-link {
