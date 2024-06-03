@@ -1,8 +1,8 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import Header from '@/components/header/Header.vue';
-// import Project from '@/components/project/Project.vue';
-// import Travel from '@/components/travel/Travel.vue';
+import Project from '@/components/project/Project.vue';
+import Travel from '@/components/travel/Travel.vue';
 // import Contact from '@/components/contact/Contact.vue';
 const isLoading = ref(true);
 onMounted(() => {
@@ -27,8 +27,8 @@ onMounted(() => {
     </div>
     <div v-else>
       <Header />
-      <!-- <Project /> -->
-      <!-- <Travel /> -->
+      <Project />
+      <Travel />
       <!-- <Contact /> -->
     </div>
   </div>

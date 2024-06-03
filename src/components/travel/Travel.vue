@@ -14,7 +14,7 @@ onMounted(() => {
             start: '50px 80%',
         }
     });
-    gsap.fromTo(plane.value, { x: 180, opacity: 0 }, {
+    gsap.fromTo(plane.value, { x: 100, opacity: 0 }, {
         opacity: 1, x: 0, duration: 1.5,
         scrollTrigger: {
             trigger: plane.value,
@@ -22,6 +22,7 @@ onMounted(() => {
             start: '50px 80%',
         }
     });
+    const mm = gsap.matchMedia();
     gsap.fromTo(".travel__content p", { opacity: 0 }, {
         opacity: 1, duration: 1.5, delay: .3,
         scrollTrigger: {
