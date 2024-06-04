@@ -6,16 +6,17 @@ import { onMounted, ref } from "vue";
 const toggleBurger = ref(false);
 const article = ref(null);
 const self = ref(null);
+const audio = ref(null);
 const volume = ref(true);
-const audioElement = new Audio("/src/assets/music/birds39-forest-20772.mp3");
+// const audioElement = new Audio("/src/assets/music/birds39-forest-20772.mp3");
 const toggleVolume = () => {
     volume.value = !volume.value;
-    if (volume.value) {
-        audioElement.pause();
+    if (audio.value.paused) {
+        audio.value.play();
+        audio.value.autoplay = true;
+        audio.value.loop = true;
     } else {
-        audioElement.play();
-        audioElement.autoplay = true;
-        audioElement.loop = true;
+        audio.value.pause();
     }
 };
 gsap.registerPlugin(ScrollTrigger);
@@ -98,11 +99,11 @@ onMounted(() => {
 
                 <div class="header__top-block">
 
-                    <a href="/src/assets/resume/CV.pdf" download="Резюме" class="header__top-link" type="button">
+                    <a href="/src/assets/resume/CV.pdf" download="CV" class="header__top-link" type="button">
                         <i class="fal fa-arrow-to-bottom"></i>
                     </a>
 
-                    <a href="/src/assets/resume/CV.pdf" download="Резюме" class="button" type="button">
+                    <a href="/src/assets/resume/CV.pdf" download="CV" class="button" type="button">
                         <span class="button__text">{{ langData.cv[lang ? "en" : "ru"] }}</span>
                         <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35"
                                 id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg">
@@ -127,6 +128,7 @@ onMounted(() => {
                     <button class="header__top-volume" @click="toggleVolume">
                         <i class="fal fa-volume-mute" v-if="volume"></i>
                         <i class="fal fa-volume" v-else></i>
+                        <audio ref="audio" src="/src/assets/music/birds39-forest-20772.mp3"></audio>
                     </button>
 
                     <div class="header-hamburger" :class="toggleBurger ? 'active' : ''"
