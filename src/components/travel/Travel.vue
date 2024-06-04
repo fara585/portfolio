@@ -11,7 +11,7 @@ onMounted(() => {
         scrollTrigger: {
             trigger: ".title3",
             toggleActions: "restart pause resume none",
-            start: '50px 80%',
+            start: '-150px 80%',
         }
     });
     gsap.fromTo(plane.value, { x: 100, opacity: 0 }, {
@@ -19,16 +19,15 @@ onMounted(() => {
         scrollTrigger: {
             trigger: plane.value,
             toggleActions: "restart pause resume none",
-            start: '50px 80%',
+            start: '-150px 80%',
         }
     });
-    const mm = gsap.matchMedia();
     gsap.fromTo(".travel__content p", { opacity: 0 }, {
-        opacity: 1, duration: 1.5, delay: .3,
+        opacity: 1, duration: 1.5, delay: .5,
         scrollTrigger: {
             trigger: ".travel__content p",
             toggleActions: "restart pause resume none",
-            start: '50px 80%',
+            start: '-150px 80%',
         }
     });
 });
@@ -54,7 +53,6 @@ onMounted(() => {
             </div>
 
             <p>{{ langData.travelinfo[lang ? "en" : "ru"] }}</p>
-
 
         </div>
     </section>

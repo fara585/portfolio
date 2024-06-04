@@ -26,7 +26,9 @@ onMounted(() => {
 <template>
     <footer class="footer" id="contact">
         <div class="gradient4"></div>
+
         <div class="container footer__content">
+
             <div class="footer__content-media">
                 <div class="footer__content-contact">
                     <h3>{{ langData.contacts[lang ? "en" : "ru"] }}</h3>
@@ -45,7 +47,9 @@ onMounted(() => {
                     <img src="/src/assets//images/tg.png" alt="">
                 </form>
             </div>
+
             <span></span>
+
             <div class="footer__content-details">
                 <ul class="footer__details-list">
                     <li><a href="tel:+998940046221" class="footer__details-list-items">+99894 004 62 21</a></li>
@@ -104,6 +108,8 @@ onMounted(() => {
                     </li>
                 </ul>
             </div>
+
         </div>
+        
     </footer>
 </template>

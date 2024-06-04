@@ -11,12 +11,6 @@
             }
         }
     }
-
-    .skills {
-        &__content {
-            padding: 130px 0 50px;
-        }
-    }
 }
 
 @media(max-width: 1500px) {
@@ -124,7 +118,6 @@
     .footer {
 
         &__content {
-            padding: 180px 15px 30px;
 
             &-contact {
                 padding: 70px 25px;
@@ -169,12 +162,6 @@
             }
         }
     }
-
-    .skills {
-        &__content {
-            padding: 110px 0 84px;
-        }
-    }
 }
 
 @media(max-width: 900px) {
@@ -216,7 +203,7 @@
     .main__article {
         &-content {
             img {
-                max-width: 380px;
+                max-width: 350px;
             }
         }
     }
@@ -306,12 +293,6 @@
 
     }
 
-    .section {
-        &__content {
-            
-        }
-    }
-
 }
 
 @media(max-width: 850px) {
@@ -364,19 +345,6 @@
                 }
             }
 
-        }
-    }
-
-    .travel {
-        &__content {
-
-            &-flags {
-                padding: 30px 0 200px;
-
-                &-blocks {
-                    gap: 10px;
-                }
-            }
         }
     }
 }
@@ -553,7 +521,6 @@
     .travel {
         &__content {
             &-flags {
-                padding: 20px 0 200px;
 
                 &-plane {
                     display: none;
@@ -768,12 +735,6 @@
 
     .travel {
         &__content {
-            padding: 150px 0 0;
-
-            &-flags {
-                padding: 50px 0 200px;
-            }
-
             p {
                 font-size: 14px;
                 line-height: 17px;
@@ -784,7 +745,6 @@
     .footer {
 
         &__content {
-            padding: 140px 15px 20px;
 
             &-details {
                 flex-direction: column;
@@ -829,6 +789,7 @@
 }
 
 @media(max-width: 420px) {
+
     .section__content {
 
         &-card {

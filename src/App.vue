@@ -3,7 +3,7 @@ import { ref, onMounted, onUnmounted } from 'vue';
 import Header from '@/components/header/Header.vue';
 import Project from '@/components/project/Project.vue';
 import Travel from '@/components/travel/Travel.vue';
-// import Contact from '@/components/contact/Contact.vue';
+import Contact from '@/components/contact/Contact.vue';
 const isLoading = ref(true);
 onMounted(() => {
   const handleLoaded = () => {
@@ -29,7 +29,7 @@ onMounted(() => {
       <Header />
       <Project />
       <Travel />
-      <!-- <Contact /> -->
+      <Contact />
     </div>
   </div>
 </template>
