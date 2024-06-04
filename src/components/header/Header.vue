@@ -39,13 +39,15 @@ onMounted(() => {
     mm.add("(max-width: 1700px)", () => {
         tl.kill();
     });
-    gsap.fromTo(self.value, { x: -100, opacity: 0 }, {
-        opacity: 1, x: 0, duration: 1.5, delay: .7,
-        scrollTrigger: {
-            trigger: self.value,
-            toggleActions: "restart pause resume none",
-            start: '-250px 80%',
-        }
+    mm.add("(max-width: 1700px)", () => {
+        gsap.fromTo(self.value, { x: -100, opacity: 0 }, {
+            opacity: 1, x: 0, duration: 1.5, delay: .7,
+            scrollTrigger: {
+                trigger: self.value,
+                toggleActions: "restart pause resume none",
+                start: '-250px 80%',
+            }
+        });
     });
     gsap.fromTo(".title", { x: 100, opacity: 0 }, {
         opacity: 1, x: 0, duration: 1.5,
@@ -96,11 +98,11 @@ onMounted(() => {
 
                 <div class="header__top-block">
 
-                    <a href="#abc" class="header__top-link" type="button">
+                    <a href="/src/assets/resume/CV.pdf" download="Резюме" class="header__top-link" type="button">
                         <i class="fal fa-arrow-to-bottom"></i>
                     </a>
 
-                    <a href="#abv" class="button" type="button">
+                    <a href="/src/assets/resume/CV.pdf" download="Резюме" class="button" type="button">
                         <span class="button__text">{{ langData.cv[lang ? "en" : "ru"] }}</span>
                         <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35"
                                 id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg">
@@ -198,8 +200,10 @@ onMounted(() => {
 
     <section class="skills" id="skills">
         <div class="gradient"></div>
+
         <div class="skills__content">
             <h3 class="title">{{ langData.skills[lang ? "en" : "ru"] }}</h3>
+
             <div class="skills__logos">
                 <div class="skills__logos-slide">
                     <img src="/src/assets/images/infinite/html.svg" alt="">
@@ -250,6 +254,7 @@ onMounted(() => {
                     <img src="/src/assets/images/infinite/tail.svg" alt="">
                 </div>
             </div>
+
             <div class="skills__media">
                 <h4 class="title">{{ langData.skills[lang ? "en" : "ru"] }}</h4>
                 <div class="skills__media-block">
@@ -286,6 +291,7 @@ onMounted(() => {
                 </div>
             </div>
         </div>
+
     </section>
 
 </template>
