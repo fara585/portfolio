@@ -54,7 +54,8 @@ onMounted(() => {
             <div class="travel__content-bottom">
                 <p>{{ langData.travelinfo[lang ? "en" : "ru"] }}</p>
                 <button>
-                    <p>{{ langData.album[lang ? "en" : "ru"] }}</p>
+                    <a href="https://travel-album.vercel.app/" target="_blank">{{ langData.album[lang ? "en" : "ru"] }}
+                    </a>
                     <i class="fas fa-external-link"></i>
                 </button>
             </div>
