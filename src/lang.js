@@ -97,6 +97,10 @@ const langData = {
         en: "Farhod",
         ru: "Фарход"
     },
+    album: {
+        en: "Album",
+        ru: "Альбом"
+    }
 };
 export const lang = ref(true);
 export default langData;

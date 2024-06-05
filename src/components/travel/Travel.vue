@@ -51,9 +51,13 @@ onMounted(() => {
                 </div>
                 <img src="/src/assets/images/plane3.svg" alt="" ref="plane" class="travel__content-flags-plane">
             </div>
-
-            <p>{{ langData.travelinfo[lang ? "en" : "ru"] }}</p>
-
+            <div class="travel__content-bottom">
+                <p>{{ langData.travelinfo[lang ? "en" : "ru"] }}</p>
+                <button>
+                    <p>{{ langData.album[lang ? "en" : "ru"] }}</p>
+                    <i class="fas fa-external-link"></i>
+                </button>
+            </div>
         </div>
     </section>
 </template>
