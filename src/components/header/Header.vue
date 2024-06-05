@@ -8,17 +8,9 @@ const article = ref(null);
 const self = ref(null);
 const audio = ref(null);
 const volume = ref(true);
+const toggleVolume = ref(Function)
 // const audioElement = new Audio("/src/assets/music/birds39-forest-20772.mp3");
-const toggleVolume = () => {
-    volume.value = !volume.value;
-    if (audio.value.paused) {
-        audio.value.play();
-        audio.value.autoplay = true;
-        audio.value.loop = true;
-    } else {
-        audio.value.pause();
-    }
-};
+
 gsap.registerPlugin(ScrollTrigger);
 onMounted(() => {
     const tl = gsap.timeline({
@@ -64,6 +56,18 @@ onMounted(() => {
     gsap.fromTo(".header__content-bottom", { opacity: 0 }, {
         opacity: 1, duration: 1.5, delay: 1
     });
+
+    toggleVolume.value = () => {
+        console.log(audio.value);
+        volume.value = !volume.value;
+        if (audio.value.paused) {
+            audio.value.play();
+            audio.value.autoplay = true;
+            audio.value.loop = true;
+        } else {
+            audio.value.pause();
+        }
+    };
 });
 </script>
 
@@ -99,11 +103,11 @@ onMounted(() => {
 
                 <div class="header__top-block">
 
-                    <a href="../../assets/resume/CV.pdf" download="CV" class="header__top-link" type="button">
+                    <a href="/public/CV.pdf" download="CV" class="header__top-link" type="button">
                         <i class="fal fa-arrow-to-bottom"></i>
                     </a>
 
-                    <a href="../../assets/resume/CV.pdf`" download="CV" class="button" type="button">
+                    <a href="/public/CV.pdf" download="CV" class="button" type="button">
                         <span class="button__text">{{ langData.cv[lang ? "en" : "ru"] }}</span>
                         <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35"
                                 id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg">
@@ -128,7 +132,7 @@ onMounted(() => {
                     <button class="header__top-volume" @click="toggleVolume">
                         <i class="fal fa-volume-mute" v-if="volume"></i>
                         <i class="fal fa-volume" v-else></i>
-                        <audio ref="audio" src="../../assets/music/birds39-forest-20772.mp3"></audio>
+                        <audio ref="audio" src="/audio.mp3"></audio>
                     </button>
 
                     <div class="header-hamburger" :class="toggleBurger ? 'active' : ''"
@@ -137,11 +141,8 @@ onMounted(() => {
                         <span class="header-hamburger__bar"></span>
                         <span class="header-hamburger__bar"></span>
                     </div>
-
                 </div>
-
             </div>
-
             <ul class="header__list-media" :class="toggleBurger ? 'active' : ''">
                 <li>
                     <a href="#header" class="header__list-media-items">
