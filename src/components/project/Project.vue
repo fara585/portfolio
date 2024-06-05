@@ -61,7 +61,7 @@ onMounted(() => {
                             <img src="/src/assets/images/gsap.svg" alt="" class="gsap__logo">
                         </div>
                         <button>
-                            <a class="button2" href="https://yourmeal-fara585.netlify.app/">
+                            <a class="button2" href="https://yourmeal-fara585.netlify.app/" target="_blank">
                                 <span class="button2__icon-wrapper">
                                     <svg width="10" class="button2__icon-svg" xmlns="http://www.w3.org/2000/svg"
                                         fill="none" viewBox="0 0 14 15">
@@ -96,7 +96,7 @@ onMounted(() => {
                             <img src="/src/assets/images/gsap.svg" alt="" class="gsap__logo">
                         </div>
                         <button>
-                            <a class="button2" href="https://pizzashop-fara.vercel.app/">
+                            <a class="button2" href="https://pizzashop-fara.vercel.app/" target="_blank">
                                 <span class="button2__icon-wrapper">
                                     <svg width="10" class="button2__icon-svg" xmlns="http://www.w3.org/2000/svg"
                                         fill="none" viewBox="0 0 14 15">
@@ -131,7 +131,7 @@ onMounted(() => {
                             <img src="/src/assets/images/gsap.svg" alt="" class="gsap__logo">
                         </div>
                         <button>
-                            <a class="button2" href="https://ebook-fara585.vercel.app/">
+                            <a class="button2" href="https://ebook-fara585.vercel.app/" target="_blank">
                                 <span class="button2__icon-wrapper">
                                     <svg width="10" class="button2__icon-svg" xmlns="http://www.w3.org/2000/svg"
                                         fill="none" viewBox="0 0 14 15">
@@ -164,7 +164,7 @@ onMounted(() => {
                             <img src="/src/assets/images/lenis.svg" alt="">
                         </div>
                         <button>
-                            <a class="button2" href="https://ecommerce-fara585.vercel.app/">
+                            <a class="button2" href="https://ecommerce-fara585.vercel.app/" target="_blank">
                                 <span class="button2__icon-wrapper">
                                     <svg width="10" class="button2__icon-svg" xmlns="http://www.w3.org/2000/svg"
                                         fill="none" viewBox="0 0 14 15">
@@ -197,7 +197,7 @@ onMounted(() => {
                             <img src="/src/assets/images/lenis.svg" alt="">
                         </div>
                         <button>
-                            <a class="button2" href="https://vue-js-first-project.vercel.app/">
+                            <a class="button2" href="https://vue-js-first-project.vercel.app/" target="_blank">
                                 <span class="button2__icon-wrapper">
                                     <svg width="10" class="button2__icon-svg" xmlns="http://www.w3.org/2000/svg"
                                         fill="none" viewBox="0 0 14 15">
@@ -230,7 +230,7 @@ onMounted(() => {
                             <img src="/src/assets/images/js.svg" alt="">
                         </div>
                         <button>
-                            <a class="button2" href="https://fara585.github.io/dBurger">
+                            <a class="button2" href="https://fara585.github.io/dBurger" target="_blank">
                                 <span class="button2__icon-wrapper">
                                     <svg width="10" class="button2__icon-svg" xmlns="http://www.w3.org/2000/svg"
                                         fill="none" viewBox="0 0 14 15">
@@ -251,7 +251,7 @@ onMounted(() => {
                     </div>
                 </swiper-slide>
             </swiper>
-            
+
         </div>
     </section>
 </template>

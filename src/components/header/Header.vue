@@ -103,7 +103,7 @@ onMounted(() => {
                         <i class="fal fa-arrow-to-bottom"></i>
                     </a>
 
-                    <a href="../../assets/resume/CV.pdf" download="CV" class="button" type="button">
+                    <a href="../../assets/resume/CV.pdf`" download="CV" class="button" type="button">
                         <span class="button__text">{{ langData.cv[lang ? "en" : "ru"] }}</span>
                         <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35"
                                 id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg">
@@ -128,7 +128,7 @@ onMounted(() => {
                     <button class="header__top-volume" @click="toggleVolume">
                         <i class="fal fa-volume-mute" v-if="volume"></i>
                         <i class="fal fa-volume" v-else></i>
-                        <audio ref="audio" src="/src/assets/music/birds39-forest-20772.mp3"></audio>
+                        <audio ref="audio" src="../../assets/music/birds39-forest-20772.mp3"></audio>
                     </button>
 
                     <div class="header-hamburger" :class="toggleBurger ? 'active' : ''"
