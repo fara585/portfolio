@@ -32,15 +32,11 @@ onMounted(() => {
     });
 });
 </script>
-
 <template>
     <section class="travel" id="travel">
         <div class="gradient3"></div>
-
         <div class="container travel__content">
-
             <h2 class="title3">{{ langData.travel[lang ? "en" : "ru"] }}</h2>
-
             <div class="travel__content-flags">
                 <div class="travel__content-flags-blocks">
                     <img src="/src/assets/images/aflag.png" alt="">
@@ -54,7 +50,7 @@ onMounted(() => {
             <div class="travel__content-bottom">
                 <p>{{ langData.travelinfo[lang ? "en" : "ru"] }}</p>
                 <button>
-                    <a href="https://travel-album.vercel.app/" target="_blank">{{ langData.album[lang ? "en" : "ru"] }}
+                    <a href="https://fara585.github.io/album/" target="_blank">{{ langData.album[lang ? "en" : "ru"] }}
                     </a>
                     <i class="fas fa-external-link"></i>
                 </button>

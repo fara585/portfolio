@@ -9,8 +9,6 @@ const self = ref(null);
 const audio = ref(null);
 const volume = ref(true);
 const toggleVolume = ref(Function)
-// const audioElement = new Audio("/src/assets/music/birds39-forest-20772.mp3");
-
 gsap.registerPlugin(ScrollTrigger);
 onMounted(() => {
     const tl = gsap.timeline({
