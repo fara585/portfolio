@@ -101,11 +101,11 @@ onMounted(() => {
 
                 <div class="header__top-block">
 
-                    <a href="/cv1.pdf" download="CV" class="header__top-link" type="button">
+                    <a href="/resume.pdf" download="CV" class="header__top-link" type="button">
                         <i class="fal fa-arrow-to-bottom"></i>
                     </a>
 
-                    <a href="/cv1.pdf" download="CV" class="button" type="button">
+                    <a href="/resume.pdf" download="CV" class="button" type="button">
                         <span class="button__text">{{ langData.cv[lang ? "en" : "ru"] }}</span>
                         <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35"
                                 id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg">
