@@ -267,17 +267,20 @@
     z-index: 2;
 
     &__base {
+        width: 100%;
         background: url(/src/assets/images/layer-base.png) no-repeat center/cover;
         transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
         z-index: 0;
     }
 
     &__middle {
+        width: 100%;
         background: url(/src/assets/images/layer-middle.png) no-repeat center/cover;
         transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
     }
 
     &__front {
+        width: 100%;
         background: url(/src/assets/images/layer-front.png) no-repeat center/cover;
         transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
     }

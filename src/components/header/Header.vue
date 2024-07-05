@@ -122,8 +122,8 @@ onMounted(() => {
                     </a>
 
                     <button class="header__top-language" @click="lang = !lang">
-                        <img src="/src//assets/images/icons8-usa-48.png" alt="" v-if="lang">
-                        <img src="/src//assets/images/icons8-russian-federation-48.png" alt="" v-else>
+                        <img src="/src//assets/images/icons8-usa-48.png" alt="" v-if="lang" loading="lazy">
+                        <img src="/src//assets/images/icons8-russian-federation-48.png" alt="" v-else loading="lazy">
                         <span>{{ lang ? "En" : "Ru" }}</span>
                     </button>
 
@@ -189,7 +189,7 @@ onMounted(() => {
 
     <article ref="article" class="main__article" id="about">
         <div class="container main__article-content">
-            <img src="/src/assets/images/self.png" alt="" ref="self" />
+            <img src="/src/assets/images/self.png" alt="" ref="self" loading="lazy" />
             <div class="main__content-right">
                 <h2 class="main__right-title">{{ langData.name[lang ? "en" : "ru"] }}</h2>
                 <p class="main__right-txt">
@@ -207,52 +207,52 @@ onMounted(() => {
 
             <div class="skills__logos">
                 <div class="skills__logos-slide">
-                    <img src="/src/assets/images/infinite/html.svg" alt="">
-                    <img src="/src/assets/images/infinite/css.svg" alt="">
-                    <img src="/src/assets/images/infinite/sass.svg" alt="">
-                    <img src="/src/assets/images/infinite/js.svg" alt="">
-                    <img src="/src/assets/images/infinite/gsap.svg" alt="">
-                    <img src="/src/assets/images/infinite/scroll.svg" alt="">
-                    <img src="/src/assets/images/infinite/lenis.svg" alt="">
-                    <img src="/src/assets/images/infinite/swiper.svg" alt="">
-                    <img src="/src/assets/images/infinite/vue.svg" alt="">
-                    <img src="/src/assets/images/infinite/tail.svg" alt="">
+                    <img src="/src/assets/images/infinite/html.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/css.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/sass.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/js.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/gsap.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/scroll.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/lenis.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/swiper.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/vue.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/tail.svg" alt="" loading="lazy">
                 </div>
                 <div class="skills__logos-slide">
-                    <img src="/src/assets/images/infinite/html.svg" alt="">
-                    <img src="/src/assets/images/infinite/css.svg" alt="">
-                    <img src="/src/assets/images/infinite/sass.svg" alt="">
-                    <img src="/src/assets/images/infinite/js.svg" alt="">
-                    <img src="/src/assets/images/infinite/gsap.svg" alt="">
-                    <img src="/src/assets/images/infinite/scroll.svg" alt="">
-                    <img src="/src/assets/images/infinite/lenis.svg" alt="">
-                    <img src="/src/assets/images/infinite/swiper.svg" alt="">
-                    <img src="/src/assets/images/infinite/vue.svg" alt="">
-                    <img src="/src/assets/images/infinite/tail.svg" alt="">
+                    <img src="/src/assets/images/infinite/html.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/css.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/sass.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/js.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/gsap.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/scroll.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/lenis.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/swiper.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/vue.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/tail.svg" alt="" loading="lazy">
                 </div>
                 <div class="skills__logos-slide">
-                    <img src="/src/assets/images/infinite/html.svg" alt="">
-                    <img src="/src/assets/images/infinite/css.svg" alt="">
-                    <img src="/src/assets/images/infinite/sass.svg" alt="">
-                    <img src="/src/assets/images/infinite/js.svg" alt="">
-                    <img src="/src/assets/images/infinite/gsap.svg" alt="">
-                    <img src="/src/assets/images/infinite/scroll.svg" alt="">
-                    <img src="/src/assets/images/infinite/lenis.svg" alt="">
-                    <img src="/src/assets/images/infinite/swiper.svg" alt="">
-                    <img src="/src/assets/images/infinite/vue.svg" alt="">
-                    <img src="/src/assets/images/infinite/tail.svg" alt="">
+                    <img src="/src/assets/images/infinite/html.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/css.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/sass.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/js.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/gsap.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/scroll.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/lenis.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/swiper.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/vue.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/tail.svg" alt="" loading="lazy">
                 </div>
                 <div class="skills__logos-slide">
-                    <img src="/src/assets/images/infinite/html.svg" alt="">
-                    <img src="/src/assets/images/infinite/css.svg" alt="">
-                    <img src="/src/assets/images/infinite/sass.svg" alt="">
-                    <img src="/src/assets/images/infinite/js.svg" alt="">
-                    <img src="/src/assets/images/infinite/gsap.svg" alt="">
-                    <img src="/src/assets/images/infinite/scroll.svg" alt="">
-                    <img src="/src/assets/images/infinite/lenis.svg" alt="">
-                    <img src="/src/assets/images/infinite/swiper.svg" alt="">
-                    <img src="/src/assets/images/infinite/vue.svg" alt="">
-                    <img src="/src/assets/images/infinite/tail.svg" alt="">
+                    <img src="/src/assets/images/infinite/html.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/css.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/sass.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/js.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/gsap.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/scroll.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/lenis.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/swiper.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/vue.svg" alt="" loading="lazy">
+                    <img src="/src/assets/images/infinite/tail.svg" alt="" loading="lazy">
                 </div>
             </div>
 
@@ -260,34 +260,34 @@ onMounted(() => {
                 <h4 class="title">{{ langData.skills[lang ? "en" : "ru"] }}</h4>
                 <div class="skills__media-block">
                     <div class="skills__media-card">
-                        <img src="/src/assets/images/infinite/html.svg" alt="">
+                        <img src="/src/assets/images/infinite/html.svg" alt="" loading="lazy">
                     </div>
                     <div class="skills__media-card">
-                        <img src="/src/assets/images/infinite/css.svg" alt="">
+                        <img src="/src/assets/images/infinite/css.svg" alt="" loading="lazy">
                     </div>
                     <div class="skills__media-card">
-                        <img src="/src/assets/images/infinite/sass.svg" alt="">
+                        <img src="/src/assets/images/infinite/sass.svg" alt="" loading="lazy">
                     </div>
                     <div class="skills__media-card">
-                        <img src="/src/assets/images/infinite/js.svg" alt="">
+                        <img src="/src/assets/images/infinite/js.svg" alt="" loading="lazy">
                     </div>
                     <div class="skills__media-card">
-                        <img src="/src/assets/images/infinite/gsap.svg" alt="">
+                        <img src="/src/assets/images/infinite/gsap.svg" alt="" loading="lazy">
                     </div>
                     <div class="skills__media-card">
-                        <img src="/src/assets/images/infinite/scroll.svg" alt="">
+                        <img src="/src/assets/images/infinite/scroll.svg" alt="" loading="lazy">
                     </div>
                     <div class="skills__media-card">
-                        <img src="/src/assets/images/infinite/lenis.svg" alt="">
+                        <img src="/src/assets/images/infinite/lenis.svg" alt="" loading="lazy">
                     </div>
                     <div class="skills__media-card">
-                        <img src="/src/assets/images/infinite/swiper.svg" alt="">
+                        <img src="/src/assets/images/infinite/swiper.svg" alt="" loading="lazy">
                     </div>
                     <div class="skills__media-card">
-                        <img src="/src/assets/images/infinite/vue.svg" alt="">
+                        <img src="/src/assets/images/infinite/vue.svg" alt="" loading="lazy">
                     </div>
                     <div class="skills__media-card">
-                        <img src="/src/assets/images/infinite/tail.svg" alt="">
+                        <img src="/src/assets/images/infinite/tail.svg" alt="" loading="lazy">
                     </div>
                 </div>
             </div>
