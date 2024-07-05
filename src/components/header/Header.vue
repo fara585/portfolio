@@ -101,7 +101,7 @@ onMounted(() => {
 
                 <div class="header__top-block">
 
-                    <a href="/resume.pdf" download="CV" class="header__top-link" type="button">
+                    <a href="/CV.pdf" download="CV" class="header__top-link" type="button">
                         <i class="fal fa-arrow-to-bottom"></i>
                     </a>
 

@@ -5,7 +5,7 @@ import "@/assets/styles/all.min.css"
 import "@/components/header/header.js";
 import Lenis from 'lenis';
 const lenis = new Lenis({
-    duration: 3,
+    duration: 2,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
 });
 function raf(time) {
